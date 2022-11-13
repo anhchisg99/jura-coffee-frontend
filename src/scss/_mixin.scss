@@ -1,0 +1,22 @@
+@mixin caraselIcon($left: 3%) {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: $left;
+
+  color: white;
+  font-size: 2rem;
+}
+@mixin fixedFooter(){
+  .wrapper{
+    max-height: 1080px;
+    // border:1px solid red;
+  }
+  footer {
+    position:absolute;
+    bottom:0;
+    right: 0;
+    left: 0;
+    
+  }
+}

@@ -1,0 +1,35 @@
+.item-navigation {
+  padding: 0 190px;
+margin: 50px 0px;
+  &-container {
+    max-width: 990px;
+    margin: 0 auto;
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        li:after {
+          content: "";
+          display: inline-block;
+          // display: none;
+          height: 2px;
+          width: 100%;
+          background: $secondary-color;
+          transition: linear 1s;
+        }
+        li:hover li {
+          display: inline-block;
+        }
+      }
+    }
+    nav:after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      background: $intro-bg;
+      width: 100%;
+      transform: translateY(-16px);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $primary-font;
+  max-width: 1660px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.icon {
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  z-index: 1000;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+

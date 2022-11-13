@@ -1,0 +1,93 @@
+.home-product {
+  max-width: 1680px;
+  // margin-bottom: 100px;
+  background: $intro-bg;
+  padding: 100px 50px 100px 50px;
+  // margin:0 auto;
+  &-container {
+    max-width: 1228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border:1px solid red;
+    margin: 0 auto;
+    gap: 25px;
+  }
+  &-item {
+    width: 33%;
+    transition: ease-in 0.5s;
+  }
+  &-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  &-content {
+    padding: 25px;
+    background: #feffff;
+    // color:red
+  }
+  &-heading {
+    //   color:red;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: $machine-color;
+  }
+  &-desc {
+    font-weight: 100;
+    color: $secondary-color;
+    line-height: 160%;
+  }
+  &-button {
+    a {
+      border: 2px solid $secondary-color;
+
+      padding: 13px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      color: $secondary-color;
+    }
+  }
+  &-button a:hover {
+    background: $secondary-color;
+    color: white;
+  }
+}
+@include forTable {
+  .home-product {
+    padding: 100px 70px 0 70px;
+
+    &-container {
+      // border:1px solid blue;
+      margin: auto;
+      justify-content: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      gap: 4%;
+    }
+    &-item {
+      // flex-basis: 48%;
+      width: 48%;
+    }
+  }
+}
+@include forMobie {
+  .home-product {
+    padding: 100px 70px 0 70px;
+
+    &-container {
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 100%;
+    }
+  }
+}

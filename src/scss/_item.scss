@@ -1,0 +1,29 @@
+.item {
+  margin-top:100px;
+  padding: 0 140px;
+  &-container {
+    text-align: center;
+    max-width: 990px;
+    // border: 1px solid red;
+    margin: 0 auto;
+  }
+  &-heading {
+    font-size: 35px;
+    line-height: 160%;
+    margin-bottom: 35px;
+    color: $machine-color;
+  }
+  &-content {
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 160%;
+      font-weight: 300;
+      margin: 25px 0;
+    }
+  }
+  &-desc {
+    line-height: 160%;
+    margin-bottom: 25px;
+  }
+}
