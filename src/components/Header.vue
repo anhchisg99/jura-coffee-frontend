@@ -29,7 +29,7 @@
               <li class="popup bell-icon" >
                 <router-link to="/cart">
                   <span class="icon" @click="closePopup()">
-                    <ion-icon name="cart-outline"></ion-icon>
+                    <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
                   </span>
                   <span class="bell-icon-quantity">{{ getQuantity }} </span>
                 </router-link>

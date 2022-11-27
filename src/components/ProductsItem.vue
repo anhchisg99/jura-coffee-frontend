@@ -1,5 +1,5 @@
 <template>
-    <div class="products-item">
+    <div class="products-item" >
         <router-link :to="'/categories/' + item._id">
       <div class="products-img">
         <img
